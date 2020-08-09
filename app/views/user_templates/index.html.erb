@@ -1,1 +1,23 @@
-<h1> This is the user index file </h1>
+<h1> List of users </h1>
+
+<form action="/user/add">
+  <label for="create_user">Username </label>
+  <input type="text" name="username" id="create_user" placeholder="Enter a username...">
+  <button type="submit">Add user</button>
+</form>
+
+<hr>
+
+<table border=1>
+  <tr>
+    <th>Id</th>
+    <th>Username</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Liz</td>
+    <td>
+      <a href="/users/1">Show details</a>
+  </tr>
+</table>

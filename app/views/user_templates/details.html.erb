@@ -1,1 +1,40 @@
-<h1> This is the user detail </h1>
+<h1> Liz </h1>
+
+<dl>
+  <dt>ID</dt>
+  <dd>1<dd>
+
+  <dt>Edit user</dt>
+  <dd>
+    <form action="/users">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username_change" value="Liz">
+      <button type="submit">Update user</button>
+    </form>
+  </dd>
+</dl>
+
+<h2>Own photos (1)</h2>
+
+<table border="1">
+  <tr>
+    <th>Image</th>
+    <th>Owner</th>
+    <th>Caption</th>
+    <th>Posted</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+    </td>
+    <td>Liz</td>
+    <td>This is as witty as I get</td>
+    <td>The date it was posted</td>
+    <td>
+      <a href="/photos/1">
+        Show details
+      </a>
+    </td>
+  </tr>
+</table>
