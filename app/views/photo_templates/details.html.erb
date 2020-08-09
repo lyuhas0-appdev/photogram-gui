@@ -1,1 +1,69 @@
-<h1> This is the photo detail </h1>
+<h1> Photo Details </h1>
+
+<dl>
+  <dt>Image</dt>
+  <dd>
+    <img src="https://robohash.org/modieumvoluptate.png?size=300x300&set=set1">
+  </dd>
+
+  <dt>Caption</dt>
+  <dd>
+    <p>This is as witty as I get
+    </p>
+  </dd>
+
+  <dt>Owner</dt>
+  <dd>Liz</dd>
+
+  <dt>Posted</dt>
+  <dd>The time it was posted</dd>
+
+  <dt>Edit photo</dt>
+  <dd>
+    <form action="/photo/edit">
+      <label for="image_url">Image</label>
+      <input type="text" id="image_url" name="https://robohash.org/modieumvoluptate.png?size=300x300&set=set1">
+
+      <label for="image_caption">Caption</label>
+      <textarea type="text" id="image_caption" name="image_caption_update" value="This is as witty as I get"></textarea>
+
+      <button type="submit">Update photo</button>
+    </form>
+  </dd>
+
+  <dt>Delete photo</dt>
+  <dd>
+    <a href="/photo/id">Delete this photo</a> 
+  </dd>
+</dl>
+
+<h2> Comments </h2>
+
+<table>
+  <tr>
+    <th>Commenter</th>
+    <th>Comment</th>
+    <th>Posted</th>
+  </tr>
+  
+  <tr>
+    <td>CommenterID.name</td>
+    <td>This is the comment</td>
+    <td>12/23/24/</td>
+  </tr>
+</table>
+
+<h3> Add new comment </h3>
+
+<form action="/comment/new">
+  <label for="photo_id_new_comment">Photo ID</label>
+  <input type="text" id="photo_id_new" name="photo_id_new_comment" value="1">
+
+  <label for="commenter_id_new_comment">Author ID</label>
+  <input type="text" id="commenter_id_new_comment" name="commenter_id_new_comment">
+
+  <label for="new_comment_text">Comment</label>
+  <textarea id="new_comment_text" name="new_comment_text_area" placeholder="Enter a comment..."></textarea>
+
+  <button type="submit">Add comment</button>
+</form>
