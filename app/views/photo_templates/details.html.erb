@@ -59,7 +59,7 @@
 
 <form action="/comment/new">
   <label for="photo_id_new_comment">Photo ID</label>
-  <input type="text" id="photo_id_new" name="photo_id_new_comment" value="<%= @photo.comments_count + 1 %>">
+  <input type="text" id="photo_id_new" name="photo_id_new_comment" value="<%= @photo.comments.length + 1 %>">
 
   <label for="commenter_id_new_comment">Author ID</label>
   <input type="text" id="commenter_id_new_comment" name="commenter_id_new_comment">
