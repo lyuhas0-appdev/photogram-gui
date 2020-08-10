@@ -24,7 +24,7 @@
     <th>Posted</th>
     <th></th>
   </tr>
-  <% @user_photos.each do | photo |%>
+  <% @user.own_photos.each do | photo |%>
     <tr>
       <td>
         <img src="<%= photo.image %>">
